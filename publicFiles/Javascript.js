@@ -26,7 +26,7 @@ var solutions = ["Name three things you see around you, name three sounds you he
 
 
 function setUp() {
-    alert("this is not working")
+    
     //var listOfSymptoms = ["anxiety", "hopelessness"];
     // var slider = document.getElementById("myRange");
     // var output = document.getElementById("demo");
@@ -48,7 +48,7 @@ function setUp() {
 
     document.getElementById("symptoms").innerHTML = tempProblems;
     for(i = 1; i < listOfSymptoms.length + 1;i++) {
-        alert("hello world")
+       
         document.getElementById("h" + i).innerHTML = listOfSymptoms[i - 1];
         document.getElementById("h" + i).style.visibility = "visible";
         document.getElementById("p" + i).innerHTML = solutions[i - 1];
@@ -132,7 +132,7 @@ function afterSurvey() {
         }
 
     }
-    alert("this s the symptoms" + listOfSymptoms)
+    
     window.location.href = "index3.html";
 
 
@@ -147,7 +147,7 @@ function computeSurvey(){
 
         afterSurvey();
 
-        alert(listOfSymptoms);
+       
         // listOfSymptoms = ["anxiety", "hopelessness"]
 
     }else if(indexOfQuestion == 17){
@@ -178,10 +178,7 @@ document.getElementById("h1").innerHTML = indexOfQuestion+2 + "/20"
 
         SurveyResponse = 0;
 
-    }else{
-        alert("we are all going to die")
     }
-
 
 
 
